@@ -1,0 +1,48 @@
+server:
+  port: 5002
+
+logging:
+  file:
+    name: app.log
+    max-size: 10MB
+    max-history: 5
+  level:
+    root: INFO
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gymapp
+    username: postgres
+    password: hadil123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  main:
+    web-application-type: servlet
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 30MB
+      max-request-size: 100MB
+
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: your‑smtp‑user
+    password: your‑smtp‑pass
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+application:
+  assignUrl: http://192.168.68.164:5002
