@@ -1,0 +1,14 @@
+.sorting {
+  background-image: url("../../../assets/down.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  object-fit: contain;
+  width: 0.6em;
+  height: 0.6em;
+  cursor: pointer;
+  border-radius: 1em;
+}
+.sorting:active {
+  background-color: rgb(112, 111, 111);
+}

@@ -1,0 +1,6 @@
+#leftAlign {
+  text-align: left;
+  align-items: flex-start;
+  white-space: pre-line;
+  word-wrap: break-word;
+}

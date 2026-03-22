@@ -1,0 +1,13 @@
+#container {
+  min-width: 100%;
+  border-radius: 0.5em;
+  padding: 1em;
+  transform: translateX(0);
+  text-align: "center";
+}
+.title {
+  box-shadow: 0.08em 0.1em 0.4em black;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}

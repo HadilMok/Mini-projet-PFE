@@ -1,0 +1,32 @@
+.input {
+  background-color: red;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.container {
+  position: relative;
+  cursor: pointer;
+  border: 0.08em solid black;
+  border-radius: 0.2em;
+  background-image: url("@/assets/folder.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 10em;
+  height: 10em;
+  place-self: center;
+  margin-top: 3em;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.par {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  word-break: break-all;
+}

@@ -1,0 +1,51 @@
+#container {
+  min-width: 100%;
+  border-radius: 0.5em;
+  padding: 1em;
+  transform: translateX(0);
+}
+.title {
+  box-shadow: 0.08em 0.1em 0.4em black;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+#date {
+  background-color: rgba(167, 162, 162, 0.308);
+  width: 100%;
+  margin: 1em;
+  padding: 1em;
+  justify-content: space-around;
+  border: 0.01em solid black;
+  border-radius: 0.5em;
+}
+.true {
+  padding: 1em;
+  background-color: green;
+  border-radius: 0.5em;
+  font-weight: bold;
+  color: white;
+  border: 0.01em solid black;
+}
+.false {
+  padding: 1em;
+  background-color: red;
+  border-radius: 0.5em;
+  font-weight: bold;
+  color: white;
+  border: 0.01em solid transparent;
+}
+.controlContainer {
+  width: 100%;
+}
+#underContainer {
+  width: 100%;
+  justify-content: space-around;
+}
+#row {
+  margin: 1em;
+}
+.date {
+  text-align: start;
+  width: 20%;
+}

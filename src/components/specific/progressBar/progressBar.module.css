@@ -1,0 +1,14 @@
+.line {
+  width: 2em;
+  height: 0.1em;
+  background-color: gray;
+}
+.point {
+  width: 1em;
+  height: 1em;
+  border-radius: 100em;
+  margin: 0.5em;
+  background-color: rgb(206, 199, 199);
+  border: none;
+  transition: 0.2s all;
+}

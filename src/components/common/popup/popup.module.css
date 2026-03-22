@@ -1,0 +1,11 @@
+#container {
+  position: absolute;
+  background-color: rgba(12, 33, 88, 0.781);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 0.2em;
+  padding: 2em;
+  color: white;
+}

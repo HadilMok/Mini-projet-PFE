@@ -1,0 +1,24 @@
+.block {
+  border: 0.01em solid black;
+  border-radius: 0.5em;
+  width: 5em;
+  text-align: center;
+  text-decoration: none;
+}
+#aligner {
+  height: 4em;
+  align-items: flex-end;
+  text-align: center;
+}
+.input {
+  border: 0.01em solid black;
+  border-radius: 0.5em;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
