@@ -43,6 +43,9 @@ def assign_roles(projects, professors, encadrants):
         model.Add(X[(proj, enc, "encadrant")] == 1)
         model.AddExactlyOne(X[(proj, prof, "president")] for prof in professors if prof != enc)
         model.AddExactlyOne(X[(proj, prof, "rapporteur")] for prof in professors if prof != enc)
+        # No double role same prof per project
+        for prof in professors:
+            model.Add(X[(proj, prof, "president")] + X[(proj, prof, "rapporteur")] <= 1)
     enc_count = {prof: sum(1 for p in projects if encadrants[p] == prof) for prof in professors}
     for prof in professors:
         model.Add(sum(X[(p, prof, "president")] for p in projects) == enc_count[prof])
@@ -108,7 +111,8 @@ if __name__ == "__main__":
         print(df.to_string(index=False))
 
     # Analytique globale
-    # Participation professeurs
+    # Participation 
+    
     participation = defaultdict(lambda: {'encadrant':0,'president':0,'rapporteur':0,'total':0})
     for proj, ro in roles.items():
         for role, prof in ro.items():
